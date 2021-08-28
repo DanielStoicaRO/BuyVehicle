@@ -1,24 +1,24 @@
 import java.util.MissingFormatArgumentException;
 import java.util.Scanner;
 
-public class Meniu {
+public class Menu {
 
     private ClientManager clientManager = new ClientManager();
     private CarManager carManager = new CarManager();
     private BikeManager bikeManager = new BikeManager();
     private Scanner scanner = new Scanner(System.in);
 
-    public Meniu() {
+    public Menu() {
         showMainMenu();
     }
 
     private void showMainMenu() {
         int option = 0;
-        System.out.println("Welcome to vehicle meniu: " +
+        System.out.println("Welcome to vehicle menu: " +
                 "\nPlease select your option:" +
                 "\n1. Add a client" +
                 "\n2. List of Products" +
-                "\n3. Client buy a product - subMeniu" +
+                "\n3. Client buy a product - subMenu" +
                 "\n0. Exit");
         try {
             option = scanner.nextInt();
@@ -26,7 +26,7 @@ public class Meniu {
             System.out.println("Please introduce a valid number!");
             option = scanner.nextInt();
         }
-        System.out.println("Waiting for imput: ");
+        System.out.println("Waiting for impute: ");
         switch (option) {
             case 1:
                 System.out.println("Introduce person: ");

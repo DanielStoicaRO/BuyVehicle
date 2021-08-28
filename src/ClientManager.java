@@ -9,8 +9,8 @@ public class ClientManager {
     }
     private void addKnownClients(){
         clients.add(new Person("Daniel", "Alexandru", 1977, 2, 9));
-        clients.add(new Person("Babuin", "Cocos", 1982, 4, 14));
-        clients.add(new Person("Ramon", "Trombon", 1986, 8, 11));
+        clients.add(new Person("Bogdan", "Cocos", 1982, 4, 14));
+        clients.add(new Person("Denisa", "Smarandache", 1986, 8, 11));
     }
     public void addClient() {
         clients.add(new Person());
